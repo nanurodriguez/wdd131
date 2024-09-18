@@ -62,7 +62,7 @@ nav {
 
 .right-sidebar{
     background: #F1A661;
-    grid-column:3/4;
+    grid-column:2/4;
 }
 footer{
     background:wheat;
@@ -77,4 +77,10 @@ footer{
     flex-wrap: wrap;
     flex: 1 1 100%;
     color: #E38B29;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+    text-decoration: none;
+	text-align: center;
+    display:block;
+    box-shadow: #FDEEDC;
 }
