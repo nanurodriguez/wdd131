@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header { 
+    background: #FDEEDC;
+    padding: 2rem;
+    grid-column: 1/4;
+    text-align: center;
+}
+h1{
+    font-weight: 500;
+    color: #E38B29;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+    font-size: 30px; 
+    font-style: bold; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 17.6px;
+    padding: 1rem;
+}
+p{
+    color:#F1A661;
+}
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
+}
+/* 	modern is a class and a is the links, this means it will update; */
+.modern a {
+	flex: 1 1 100%;
+}
+/* 	styiling only the navigation bar; */
+.navigation {
+	list-style: none;
+	display: flex;
+	background-color: whitesmoke;
+	align-items: center;
+}
+/* Styinling the links*/
+.navigation a {
+	display: block;
+	color: #E38B29;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.left-sidebar{
+    background: #FFD8A9;
+    grid-column: 1/2;
+    
+}
+/*add main{} once I go over grids one more time for CSS*/
+
+.right-sidebar{
+    background: #F1A661;
+    grid-column:3/4;
+}
+footer{
+    background:wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+    color:brown;
+}
+.left-sidebar,
+.right-sidebar{
+    padding:1rem;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    color: #E38B29;
+}
