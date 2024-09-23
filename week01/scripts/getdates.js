@@ -5,5 +5,5 @@ Intl.DateTimeFormat(
 		dateStyle: "full"
 	}
 )
-year.innerHTML = `getFullYear(): span
+currentYear.innerHTML = `getFullYear(): span
 class= "highlight">${today.getFullYear()}</span`;
