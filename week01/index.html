@@ -8,14 +8,13 @@
     <meta author="Nancy Bell">
     <link rel="stylesheet" href="./styles/base.css" />
     <script defer src="./scripts/getdates.js"></script>
-    <!--Defer attribute will run in the order they appear in the page and execute them as soon as the script and content are downloaded-->
+    <!--Defer attribute will run in the order they appear in the page and execute them as soon as the script and content are downloaded so if we add defer javascript will not block the page-->
 
 </head>
 <body>
     <header>
         <h1 >WDD 131- Dynamic Web Fundamentals- Nancy Bell</h1>
         <p>Nancy Bell</p> <!--I was thinking about using a link here for my name but maybe I can add another title or heading for my resume"?-->
-        <hr>
         <nav class="navigation modern">
             <a href="https://www.linkedin.com/in/nancy-bell-4971bb14a/" title="LinkedIn">LinkedIn</a>
             <a href="https://byui.instructure.com/" title="I-learn">I-learn</a>
@@ -23,15 +22,26 @@
             <a href="#" title="Final Project">Final Project</a>
         </nav>
     </header>
+    <!--Content of my web page: about me and Web Resources-->
     <main>
         <section class="card">
-            <h2>Web Dev Resources</h2>
+            <div>
+                <h2>Web Dev Resources</h2>
+            </div>
         </section>
-        <section class="card">
-            <h2>About me </h2>
-            <div class="image"><img src=".images/profile.jpeg" alt="My profile Image"></div>
-        </section>
+        <aside class="asideRight">
+            <section>
+                <div>
+                    <h2>About me </h2>
+                </div>
+            <!--<div class="image"><img src=".images/profile.jpeg" alt="My profile Image"></div> -->
+            </section>
+        </aside>
     </main>
-    <footer>©<span id="currentYear"></span>🗻Utah🗻 Nancy Bell <span id="lastModified"></span></footer> 
+    <footer>
+        <span id="currentYear"></span>
+        <p>©🗻Utah🗻 Nancy Bell</p>
+        <span id="lastModified"></span>
+    </footer> 
 </body>
 </html>
