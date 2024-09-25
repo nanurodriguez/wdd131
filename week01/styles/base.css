@@ -24,7 +24,7 @@ h1{
     font-style: bold; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 17.6px;
+    line-height: 30px;
     padding: 1rem;
 }
 
@@ -57,20 +57,28 @@ nav {
     border: 1px solid #fff;
 }
 
-.class{
-    display: flex;
-    flex-shrink: 1;
-    flex-grow:0;
-    background-color: #FDEEDC;
+.card{ 
+    padding: 1rem;
     text-decoration: none;
     text-align: center;
     color: #E38B29;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }
-.asideRight{
-    display: flex;
-    justify-self: left;
+.left{
+    background-color: red;
+}
+.right{
+    background-color: blue;
+    color: #E38B29;
+}
+.three{
+    background-color: black;
+}
+.flex-container{
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 66% 33%;
+    width: 100vw;
 }
 
 
