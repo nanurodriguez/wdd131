@@ -4,9 +4,8 @@
 }
 
 body{
-    display:flex;
     display:grid;
-    height: 100vh; /*It will adjust the hight of the page how big the body will be*/
+    height: 100vh; /*It will adjust the height of the page how big the body will be*/
     grid-template: auto 1fr auto / 300px 1fr auto;
 }
 
@@ -36,27 +35,39 @@ nav {
 	max-width: 90vw;
     outline: 2px solid #E38B29;
 }
-/* 	modern is a class and a is the links, this means it will update centering the links title and nav bar; */
-.modern a {
-	flex: 1 1 100%;
-}
 /* 	styiling only the navigation bar; */
 .navigation {
-	list-style: none;
 	display: flex;
 	background-color: whitesmoke;
 	align-items: center;
 }
 /* Styinling the links*/
 .navigation a {
-	display: block;
+    flex: 1 1 100%;
 	color: #E38B29;
 	padding: 0.75rem;
-	text-decoration: none;
 	text-align: center;
     border: 1px solid #fff;
 }
 
+.left-sidebar{
+    background: rosybrown;
+    grid-column: 1 / 2;
+}
+main {
+    background: coral;
+    grid-column: 2 / 3;
+  }
+  
+  .right-sidebar {
+    background: oldlace;
+    grid-column: 3 / 4;
+  }
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
+/*
 .card{ 
     padding: 1rem;
     text-decoration: none;
@@ -82,7 +93,7 @@ nav {
 }
 
 
-/* "hiding image until I figure things out...
+ "hiding image until I figure things out...
 img{
     display:grid;
     height: 150px;
