@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    margin: 0; /* Reset default margin */
+}
+
+header { 
+    background: #FDEEDC;
+    padding: 2rem;
+    grid-column: 1/4;
+    text-align: center;
+}
+h1{
+    color: #E38B29;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem;
+}
+
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
+    outline: 2px solid #E38B29;
+}
+/* 	styiling only the navigation bar; */
+.navigation {
+	display: flex;
+	background-color: whitesmoke;
+	align-items: center;
+}
+/* Styinling the links*/
+.navigation a {
+    flex: 1 1 100%;
+	color: #E38B29;
+	padding: 0.75rem;
+	text-align: center;
+    border: 1px solid #fff;
+}
+nav a:hover {
+	text-decoration: overline;
+}
+/* Styling the cards*/
+main {
+    display: grid;
+    flex: 1; /* Allow the main content to grow and fill available space */
+    padding: 20px; /* Add some padding for visual appeal */
+}
+.card {
+    /* card 1*/
+    display: grid;
+    grid-column: 2/3;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+}
+main section.card.card {
+    display: grid;
+    grid-column: 3 / 3;
+    background-color: aqua;
+    border: 2px red;
+    padding: 1rem;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+NOTES
+    */
