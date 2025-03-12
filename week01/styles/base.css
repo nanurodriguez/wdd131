@@ -64,14 +64,13 @@ main section.card:first-of-type {
     display: grid;
     grid-column: 1/3;
     background-color: #5e503f;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 main section.card:nth-of-type(2) {
     display: grid;
     grid-column: 3 / 3;
     background-color: #c6ac8f;
-    border-radius: 20%;
-    padding-left: 100px;
+    border-radius: 5%;
 }
 footer {
     background-color: #eae0d5;
