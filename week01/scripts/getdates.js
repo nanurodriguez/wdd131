@@ -5,5 +5,5 @@ const today = new Date();
 currentYear.innerHTML = ` <span class="highlight">${today.getFullYear()}</span>`;
 
 //Last modified at footer by date:
-alert(document.lastModified);
-let lastModified = new Date(document.lastModified);
+const getDate = new Date(document.lastModified);
+document.getElementById("lastModified").innerHTML = getDate
