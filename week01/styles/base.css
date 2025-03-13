@@ -112,6 +112,7 @@ h2 {
     min-height: fit-content;
     max-width: 100%;
     max-height: fit-content;
+    padding: auto;
 }
 
 main img:first-of-type {
@@ -127,11 +128,9 @@ main img:first-of-type {
     /* Crop the image to fit, maintaining aspect ratio */
     position: absolute;
     /* Position the image fixed in one place to the card */
-    top: 10%;
+    top: 12%;
     right: 1rem;
     margin: 1rem;
-    margin-left: 2rem;
-    padding: 0.5rem;
     border-style: double;
     border-color: #eae0d5;
 }
@@ -150,7 +149,7 @@ main img:nth-of-type(2) {
     /* Crop the image to fit, maintaining aspect ratio */
     position: absolute;
     /* Position the image fixed in one place to the card */
-    top: 33%;
+    top: 40%;
     left: 2rem;
     bottom: 1.5rem;
     margin: 1rem;
@@ -168,9 +167,9 @@ main img:nth-of-type(2) {
 
 h3 {
     position: relative;
-    margin: 1rem;
+    left: 6%;
     padding: auto;
-    top: 2%
+    top: 5%;
 }
 
 main p:first-of-type {
@@ -196,15 +195,49 @@ main p:nth-of-type(2) {
     max-height: 30%;
     position: relative;
     left: 40%;
-    top: 2%;
     padding: 1rem;
+    top: 11%;
 
 }
 
+/* all the links in the Dev Resources */
+.card a {
+    color: #22333b;
+    display: inline-block;
+    margin: auto;
+}
+
 footer {
-    background-color: #eae0d5;
+    background-color: c;
     padding: 20px;
     text-align: center;
+}
+
+/* Entire scrollbar design */
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, #f0e3d3, #5e503f);
+    /* Color of the track */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+    background: #c6ac8f;
+    /* Color of the thumb */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5e503f;
+    /* Color when hovered */
 }
 
 /*
