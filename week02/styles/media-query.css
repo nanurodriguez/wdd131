@@ -1,23 +1,28 @@
-body{
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     max-width: 640px;
     margin: 1rem auto;
-    border:1px solid rgb(from color r g b);
+    border: 1px solid light rgb(from color r g b);
     padding: 70px;
     background-color: rgb(199, 245, 229);
 }
-main{
+
+main {
     display: grid;
     grid-template-columns: 1fr;
+    /*with a grid template of only one column, and a equal gap of 1rem.*/
     grid-gap: 1rem;
 
 }
-section{
+
+section {
     padding: 1rem;
     background-color: aliceblue;
 }
