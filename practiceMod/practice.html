@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        const list = document.querySelector('ul');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+        button.addEventListener('click', () => { //Adds an event listener 
+        // to the "Add item" button, 
+        // which executes the provided function when the button is clicked.
+            //the code will run when the button is clicked
+            const myItem = input.value; //Gets the value entered in the input field.
+            input.value = ''; // Clears the input field.
+            const listItem = document.createElement('li');//Creates a new list item element.
+            const listText = document.createElement('span'); //Creates a span element to hold the item text.
+            const listBtn = document.createElement('button');//Creates a "Delete" button element.
+
+            listItem.appendChild(listText);//Appends the span to the list item.
+            listText.textContent = myItem;//Sets the text content of the span to the entered item.
+            listItem.appendChild(listBtn);//Appends the "Delete" button to the list item.
+            listBtn.textContent = 'Delete';//Sets the text content of the "Delete" button.
+            list.appendChild(listItem);//Appends the list item to the unordered list.
+
+            listBtn.addEventListener('click', () => { // Adds an event listener to the "Delete" button, 
+            // which executes the provided function when the button is clicked.
+            list.removeChild(listItem);// Removes the list item from the unordered list.
+            });
+
+            input.focus();//Sets the focus back to the input field after adding an item.
+        });
+    </script>
+  </body>
+</html>
