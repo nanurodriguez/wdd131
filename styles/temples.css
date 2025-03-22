@@ -52,6 +52,9 @@ navigation a:active {
 #menu.show::before {
     content: "X";
 }
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
 
 .images {
     margin: 1rem auto;
