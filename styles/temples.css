@@ -1,0 +1,91 @@
+/* Mobile View ***************/
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: #ace;
+    max-width: 2000px;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: rgb(80, 4, 201);
+    background-color: aliceblue;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.images {
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    text-align: left;
+    padding:20px;
+    padding-left: 40px;
+}
+
+/* Media Query for wider than mobile viewports. 
+Breakpoint should be based upon the design and content and 
+use em units to be relative to the user's font size versus fixed with pixels.  
+*/
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+}
