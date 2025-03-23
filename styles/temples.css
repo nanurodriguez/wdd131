@@ -138,6 +138,7 @@ use em units to be relative to the user's font size versus fixed with pixels.
 
     #menu {
         display: none;
+        margin-right: 2rem;
     }
 
 }
