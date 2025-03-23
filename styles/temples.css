@@ -24,7 +24,7 @@ nav {
     background-color: #d8d7f5;
     color: #380d88;
     border-radius: 8%;
-
+    margin-right: 2rem;
 }
 
 #menu::before {
