@@ -12,8 +12,15 @@
 #menu::before {
     content: "≡";
 }
+header {
+    display: flex;
+    justify-content: space-between; /* Space between nav and hamburger */
+    align-items: center;
+}
 
 nav {
+    display: flex;
+    align-items: center;
     background-color: #ace;
 }
 
@@ -95,8 +102,14 @@ Breakpoint should be based upon the design and content and
 use em units to be relative to the user's font size versus fixed with pixels.  
 */
 @media only screen and (min-width: 40em) {
+    header {
+        display: flex;
+    }
     .navigation {
         display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
     }
 
     .navigation li {

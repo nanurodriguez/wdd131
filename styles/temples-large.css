@@ -27,14 +27,31 @@ h2 {
 .parent {
     display: flex;
 }
-.whole {
-    max-width: 40%;
-    height: auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 6px;
-    justify-items: left;
+header {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-right: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
 .images {
