@@ -24,20 +24,17 @@ h2 {
     padding: 50px;
     padding-top: 80px;
 }
-.whole{
+.parent {
+    display: flex;
+}
+.whole {
     max-width: 40%;
     height: auto;
-    margin: 0;
     padding: 0.5rem;
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 6px;
-    place-items: left;
-    position: relative;
-    left: 60%;
-    bottom: 2rem;
-
+    justify-items: left;
 }
 
 .images {
