@@ -8,7 +8,7 @@
     <meta name="author" content="Nancy Bell">
     <link rel="stylesheet" href="styles/place.css" >
     <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">    
-    <script defer src="scripts/temple.js"></script>
+    <script defer src="scripts/place.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
 
     <main>
         <div class="argentina">
-            <img src="Images/argentina.jpg" alt="Argentina's Picture">
+            <img src="images/argentina.jpg" alt="Argentina's Picture">
         </div>
         <div class="data">
             <h2>Data</h2>
@@ -35,10 +35,11 @@
         </div>
         <div class="weather">
             <h2>Weather</h2>
-            <p> Temperature: </p>
-            <p>Conditions: </p>
-            <p>Wind: </p>
-            <p>Wind Chill: </p>
+            <img src="images/weather.svg" alt="Weather picture">
+            <p> Temperature:<span id="temperature"></span> </p>
+            <p>Conditions: <span id="conditions"></span></p>
+            <p>Wind: <span id="wind"></span></p>
+            <p>Wind Chill: <span id="windchill"></span> </p>
         </div>
     </main>
 
