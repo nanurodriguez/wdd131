@@ -6,13 +6,11 @@
 
 body {
     font-family: Roboto, sans-serif;
+
 }
 
 p {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.1);
-    padding: 0.5rem;
-    background-color: #eee;
 }
 
 h1 {
@@ -24,14 +22,22 @@ h1 {
 h2 {
     text-align: center;
     padding: 50px;
+    padding-top: 80px;
 }
-
-.navigation a {
+.whole{
+    max-width: 40%;
+    height: auto;
+    margin: 0;
+    padding: 0.5rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 6px;
+    place-items: left;
     position: relative;
-    left: 15rem;
-    flex: 1 1 100%;
-    max-width: 100px;
+    left: 60%;
     bottom: 2rem;
+
 }
 
 .images {
@@ -44,6 +50,11 @@ h2 {
     grid-gap: 25px;
     place-items: center;
 }
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+
+footer {
+    display: grid;
+    background:rgb(188, 211, 235);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
 }

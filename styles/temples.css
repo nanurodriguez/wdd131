@@ -5,8 +5,12 @@
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    background-color: #eee;
-    color: #000;
+    background-color: #d8d7f5;
+    color: #380d88;
+    border-radius: 8%;
+    position: relative;
+    left: 90%;
+    top: 5rem;
 }
 
 #menu::before {
@@ -15,13 +19,13 @@
 
 nav {
     background-color: #ace;
-    max-width: 2000px;
 }
 
 .navigation {
     list-style: none;
     margin: 0 auto;
-    max-width: 800px;
+    display: none;
+    /* Initially hide the navigation */
 }
 
 .navigation li {
@@ -40,9 +44,29 @@ nav {
 }
 
 .navigation a:hover,
-navigation a:active {
+.navigation a:active {
     color: rgb(80, 4, 201);
     background-color: aliceblue;
+}
+
+.navigation.show {
+    display: block;
+    /* Show the navigation when the "show" class is added */
+}
+.whole{
+    max-width: 40%;
+    height: auto;
+    margin: 0;
+    padding: 0.5rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 6px;
+    place-items: left;
+    position: relative;
+    left: 60%;
+    bottom: 2rem;
+
 }
 
 .show li {
@@ -52,8 +76,16 @@ navigation a:active {
 #menu.show::before {
     content: "X";
 }
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+main{
+    margin: 20px;
+}
+
+
+h1 {
+    margin-left: 2%;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
 }
 
 .images {
@@ -61,10 +93,20 @@ navigation a:active {
     max-width: 100%;
     height: auto;
 }
-h2{
+
+h2 {
     text-align: left;
-    padding:20px;
+    padding: 20px;
     padding-left: 40px;
+    font-family: Roboto, sans-serif;
+}
+
+footer {
+    display: grid;
+    background: rgb(188, 211, 235);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
 }
 
 /* Media Query for wider than mobile viewports. 
