@@ -14,9 +14,12 @@ p {
 }
 
 h1 {
-    position: relative;
-    top: 2.1rem;
-    padding: 20px;
+    display: flex;
+    justify-content:flex-start;
+    /* Align the ul to the right */
+    width: 100%;
+    /* Make the nav span the width */
+    align-items: center;
 }
 
 h2 {
@@ -24,16 +27,23 @@ h2 {
     padding: 50px;
     padding-top: 80px;
 }
+
 .parent {
     display: flex;
 }
+
 header {
     display: flex;
-    align-items: center; /* Vertically align items */
+    align-items: center;
+    /* Vertically align items */
 }
 
 nav {
     display: flex;
+    justify-content: flex-end;
+    /* Align the ul to the right */
+    width: 100%;
+    /* Make the nav span the width */
     align-items: center;
 }
 
@@ -67,7 +77,7 @@ nav {
 
 footer {
     display: grid;
-    background:rgb(188, 211, 235);
+    background: rgb(188, 211, 235);
     padding: 2rem;
     text-align: center;
     grid-column: 1/4;
