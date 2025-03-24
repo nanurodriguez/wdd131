@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - Nancy Bell This web page goes over responsive images">
+    <meta name="author" content="Nancy Bell">
+    <link rel="stylesheet" href="styles/responsive-images.css" >
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source  srcset="images/hero-large.webp"media="(min-width: 1000px)">
+                <source  srcset="images/hero-medium.webp"media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Small Image - Temple Image" width="500px" height="250px">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
