@@ -1,0 +1,25 @@
+@media (min-width: 500px) {
+    .argentina {
+        background: 
+    }
+    .argentina .data{
+        display: flex;
+    }
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Align the ul to the right */
+    width: 100%;
+    height: 100%;
+    /* Make the nav span the width */
+    align-items: center;
+    margin: 0;
+    font-size: 2em;
+}
+body{
+    margin: 0;
+}

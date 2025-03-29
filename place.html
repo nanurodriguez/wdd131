@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Argentina - Country Page</title>
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - Nancy Bell This web page goes over Argentina's weather and how beautiful this country is.">
-    <meta name="author" content="Nancy Bell">
-    <link rel="stylesheet" href="styles/place.css" >
-    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">    
+    <meta
+      name="description"
+      content="WDD 131 Dynamic Web Fundamentals - Nancy Bell This web page goes over Argentina's weather and how beautiful this country is."
+    />
+    <meta name="author" content="Nancy Bell" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link
+      rel="stylesheet"
+      href="styles/place-large.css"
+      media="(min-width: 768px)"
+    />
     <script defer src="scripts/place.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Argentina</h1>
-
+      <h1>Argentina</h1>
     </header>
 
     <main>
-        <div class="argentina">
-            <img src="images/argentina.jpg" alt="Argentina's Picture">
-        </div>
+      <div class="argentina">
+        <picture>
+          <source
+            srcset="images/argentina-large.webp"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/argentina-mobile.webp"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="images/argentina-small.webp"
+            alt="Description"
+            width="450"
+            height="600"
+          />
+        </picture>
+
         <div class="data">
-            <h2>Data</h2>
-            <p>Official:Republic of Argentina</p>
-            <p>Local name: Argentina</p>
-            <p>Argentina Region: South America</p>
-            <p>Surface area: 2,780,400 km²</p>
-            <p>Capital:Buenos Aires</p>
-            <p>Currency: Argentinian Pesos</p>
-            <p>Population: 45,538,000</p>
-            <p>Time Zone:  (GMT-3) </p>
-            <p>Calling Code: +54 </p>
-            <p>Languages: Spanish f</p>
+          <h2>Data</h2>
+          <p>Official:Republic of Argentina</p>
+          <p>Local name: Argentina</p>
+          <p>Argentina Region: South America</p>
+          <p>Surface area: 2,780,400 km²</p>
+          <p>Capital:Buenos Aires</p>
+          <p>Currency: Argentinian Pesos</p>
+          <p>Population: 45,538,000</p>
+          <p>Time Zone: (GMT-3)</p>
+          <p>Calling Code: +54</p>
+          <p>Languages: Spanish</p>
         </div>
-        <div class="weather">
-            <h2>Weather</h2>
-            <img src="images/weather.svg" alt="Weather picture">
-            <p> Temperature:<span id="temperature"></span> </p>
-            <p>Conditions: <span id="conditions"></span></p>
-            <p>Wind: <span id="wind"></span></p>
-            <p>Wind Chill: <span id="windchill"></span> </p>
-        </div>
+      </div>
+      <div class="weather">
+        <h2>Weather</h2>
+        <img
+          src="images/weather.svg"
+          alt="Weather picture"
+          width="150"
+          height="100"
+        />
+        <p>Temperature:<span id="temperature"></span></p>
+        <p>Conditions: <span id="conditions"></span></p>
+        <p>Wind: <span id="wind"></span></p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+      </div>
     </main>
 
     <footer>
-        <p><span id="currentYear"></span>©🗻Utah🗻 -USA- Nancy Bell</p>
-        <p>Last Modified:<span id="lastModified"></span></p>
+      <p><span id="currentYear"></span>©🗻Utah🗻 -USA- Nancy Bell</p>
+      <p>Last Modified:<span id="lastModified"></span></p>
     </footer>
-    
-</body>
+  </body>
 </html>

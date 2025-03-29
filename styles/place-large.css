@@ -1,0 +1,43 @@
+picture {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    background-color: azure;
+}
+
+@media (min-width: 1000px) {
+    .argentina img {
+        width: 100%;
+        /* Make the image take up the full width */
+        height: auto;
+        /* Maintain aspect ratio */
+        object-fit: cover;
+        /* Cover the area, cropping if needed */
+    }
+}
+
+h1 {
+    background-color: aqua;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+    font-style: bold;
+    font-size:4rem;
+    color:white;
+
+}
+.data{
+    display: grid;
+    grid-template-columns: 1/3;
+}
+h2{
+    background-color:aquamarine;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding
+    width: 15rem;
+
+}
