@@ -36,7 +36,6 @@ nav {
     display: none;
     flex-direction: column;
     width: 100%;
-    position: absolute;
     top: 100%;
     left: 0;
     background-color: #ace;
@@ -64,11 +63,14 @@ nav {
     background-color: aliceblue;
 }
 
-.navigation.show {
-    display: block;
+.show {
+    display: flex;
     /* Show the navigation when the "show" class is added */
 }
 
+.hide {
+    display: none;
+}
 
 
 #menu.show::before {
