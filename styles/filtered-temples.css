@@ -1,0 +1,156 @@
+/* Mobile View ***************/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Space between nav and hamburger */
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    background-color: #ace;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    background-color: #d8d7f5;
+    color: #380d88;
+    border-radius: 8%;
+    margin-right: 2rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #ace;
+    /* Initially hide the navigation */
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: rgb(80, 4, 201);
+    background-color: aliceblue;
+}
+
+.show {
+    display: flex;
+    /* Show the navigation when the "show" class is added */
+}
+
+.hide {
+    display: none;
+}
+
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    margin: 20px;
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;   
+    margin: 20px auto;
+}
+
+
+h1 {
+    margin-left: 2%;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+}
+
+.images {
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: left;
+    padding: 20px;
+    padding-left: 40px;
+    font-family: Roboto, sans-serif;
+}
+
+footer {
+    display: grid;
+    background: rgb(188, 211, 235);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+/* Media Query for wider than mobile viewports. 
+Breakpoint should be based upon the design and content and 
+use em units to be relative to the user's font size versus fixed with pixels.  
+*/
+@media only screen and (min-width: 40em) {
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+        margin-right: 2rem;
+    }
+    article {    
+        width: 90%;  
+        margin: 10px 0; 
+        padding: 1rem;   
+        border: 1px solid #ccc; 
+    }
+
+}

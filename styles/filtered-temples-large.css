@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+
+}
+
+p {
+    margin: 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+.parent {
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    align-items: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-right: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+/*
+.images {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+    */
+.images {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 25px;
+    margin: 0.5rem; 
+}
+
+article {
+    padding: 1rem; 
+    border: 1px solid #ccc; 
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    display: grid;
+    background: rgb(188, 211, 235);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+}
+@media only screen and (min-width: 40em) {    main {        
+    display: flex; /* Use flexbox layout */        
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */        
+    justify-content: space-around; /* Space items evenly */    
+}    
+article {        
+    flex: 0 1 30%; /* Each article will take up to 30% of the width */        
+    margin: 10px; /* Space between articles */    
+}}
