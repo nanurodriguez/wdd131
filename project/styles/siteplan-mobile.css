@@ -1,0 +1,59 @@
+/* Basic nav container and logo */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+  
+  /* Hamburger icon (mobile only) */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Hide the nav menu on mobile initially */
+  #nav-menu {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    #nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    #nav-menu.active {
+      display: flex;
+    }
+  
+    #nav-menu ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #nav-menu ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    #nav-menu ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      color: white;
+    }
+  }
+  
+  
