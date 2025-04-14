@@ -1,7 +1,10 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
