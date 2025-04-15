@@ -14,8 +14,8 @@ body {
   }
   
   header {
-    background-color: #333;
-    color: white;
+    background-color: #094BCC;
+    color: #FFFFFF;
     padding: 10px 0;
     text-align: center;
   }
@@ -31,7 +31,7 @@ body {
   }
   
   nav ul li a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
   }
@@ -39,7 +39,7 @@ body {
   section {
     padding: 20px;
     margin: 10px;
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -47,8 +47,8 @@ body {
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #95B9FF;
+    color: #FFFFFF;
   }
   #nav-menu {
     transition: all 0.3s ease;
