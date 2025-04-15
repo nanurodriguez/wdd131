@@ -3,7 +3,6 @@
 body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -47,4 +46,8 @@ body {
     background-color: #333;
     color: white;
   }
+  #nav-menu {
+    transition: all 0.3s ease;
+  }
+  
   

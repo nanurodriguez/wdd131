@@ -1,4 +1,3 @@
-/* Basic nav container and logo */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -6,7 +5,6 @@
     padding: 0 15px;
   }
   
-  /* Hamburger icon (mobile only) */
   .hamburger {
     display: none;
     font-size: 28px;
@@ -16,7 +14,6 @@
     cursor: pointer;
   }
   
-  /* Hide the nav menu on mobile initially */
   #nav-menu {
     display: flex;
   }
