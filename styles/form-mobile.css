@@ -59,4 +59,12 @@
         align-items: center;
         margin-bottom: 0.5rem;
     }
+    footer {
+        display: grid;
+        background: rgb(188, 211, 235);
+        padding: 2rem;
+        text-align: center;
+        grid-column: 1/4;
+    }
+    
 }

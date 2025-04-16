@@ -11,57 +11,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
+    <script defer src="scripts/temples.js"></script>
 </head>
 <body>
-    <h1>Form Example</h1>
-    <form method="get" action="thanks.html">
-        <fieldset>
-            <div>Product</div>
-            <select id="product" name="product">
-                <option value="sugar">Sugar</option>
-                <option value="honey">Honey</option>
-                <option value="script">Stevia</option>
-                <option value="monksFruit">Monks Fruit</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <div>Overall Rating</div>
-            <label> <input type="radio" name="rating" value="1"> ☆ </label>
-            <label> <input type="radio" name="rating" value="2"> ☆☆ </label>
-            <label> <input type="radio" name="rating" value="3"> ☆☆☆ </label>
-            <label> <input type="radio" name="rating" value="4"> ☆☆☆☆ </label>
-            <label> <input type="radio" name="rating" value="5"> ☆☆☆☆☆ </label>
-        </fieldset>
-        <fieldset>
-            <div>Date of First Taste: </div>
-            <label for="date">Enter a date:</label>
-            <input type="date" id="date" name="date">
-        </fieldset>
+    <main>
+        <h1>Form Example</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <div>Product</div>
+                <select id="product" name="product">
+                    <option value="sugar">Sugar</option>
+                    <option value="honey">Honey</option>
+                    <option value="script">Stevia</option>
+                    <option value="monksFruit">Monks Fruit</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <div>Overall Rating</div>
+                <label> <input type="radio" name="rating" value="1"> ☆ </label>
+                <label> <input type="radio" name="rating" value="2"> ☆☆ </label>
+                <label> <input type="radio" name="rating" value="3"> ☆☆☆ </label>
+                <label> <input type="radio" name="rating" value="4"> ☆☆☆☆ </label>
+                <label> <input type="radio" name="rating" value="5"> ☆☆☆☆☆ </label>
+            </fieldset>
+            <fieldset>
+                <div>Date of First Taste: </div>
+                <label for="date">Enter a date:</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
 
-        <fieldset>
-            <div>What did you like the most about the product?
+            <fieldset>
+                <div>What did you like the most about the product?
+                    <br>
+                    (Check all that apply)
+                </div>
+                <input type="checkbox" id="taste" name="taste" value="taste">
+                <label for="taste"> Taste</label><br>
+                <input type="checkbox" id="sweetness" name="sweetness" value="sweetness">
+                <label for="sweetness">Sweetness</label><br>
+                <input type="checkbox" id="after-taste" name="after-taste" value="after-taste">
+                <label for="after-taste">After Taste</label><br><br>
+            </fieldset>
+            <fieldset>
+                <div>Written Review (optional)</div>
+                <textarea id="review" name="written-review" ></textarea>
                 <br>
-                (Check all that apply)
-            </div>
-            <input type="checkbox" id="taste" name="taste" value="taste">
-            <label for="taste"> Taste</label><br>
-            <input type="checkbox" id="sweetness" name="sweetness" value="sweetness">
-            <label for="sweetness">Sweetness</label><br>
-            <input type="checkbox" id="after-taste" name="after-taste" value="after-taste">
-            <label for="after-taste">After Taste</label><br><br>
-        </fieldset>
-        <fieldset>
-            <div>Written Review (optional)</div>
-            <textarea id="review" name="written-review"></textarea>
-            <br>
-        </fieldset>
-        <fieldset>
-            <div>Your Name(optional)</div>
-            <textarea id="name"></textarea>
-            <br>
-        </fieldset>
-        <input type="submit" value="Post Review">
-    </form>
+            </fieldset>
+            <fieldset>
+                <div>Your Name(optional)</div>
+                <textarea id="name" name="written-review" ></textarea>
+                <br>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+
+    <footer>
+        <p><span id="currentYear"></span>©🗻Utah🗻 -USA- Nancy Bell</p>
+        <p>Last Modified:<span id="lastModified"></span></p>
+    </footer>
+
+    </main>
 </body>
+
 </html>

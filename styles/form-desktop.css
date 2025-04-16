@@ -82,6 +82,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #3b82f6;
 }
+footer {
+    display: grid;
+    background: rgb(188, 211, 235);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+}
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
