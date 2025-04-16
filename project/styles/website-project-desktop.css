@@ -23,25 +23,30 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0.2rem auto;
   }
   
   .logo {
     font-weight: 600;
     font-size: 2rem;
     font-style: italic;
+    margin-right: 1rem;
   }
   
   nav {
     display: flex;
+    align-items: center;
+    gap: 1rem; 
   }
   
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.2rem;
     margin: 0;
     padding: 0;
+    background-color: red;
+    margin-left: 1 rem;
   }
   
   .nav-links a {
@@ -52,12 +57,20 @@
   }
   
   .contact-btn {
-    background-color: #FFFFFF;
-    color: red;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    margin-left: 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    color: #094BCC;
+    background-color: lightcyan;
+    border: 2px solid rgb(85, 85, 243);
+    border-radius: 10px;
     font-weight: 600;
-    font-size: 1rem;
+    color: #094BCC;
+    cursor: pointer;
+  }
+  .contact-btn:hover{
+    background-color: #95B9FF;
   }
   
   .hamburger {
