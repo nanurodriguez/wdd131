@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200; /* Default: ExtraLight */
+  background-color: #ffffff;
+  color: #000;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+
+header {
+  background-color: #094BCC;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #95B9FF;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600; /* Main Title */
+}
+
+#nav-menu h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+#nav-menu p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+main h2, main h3, main h4, main h5, main h6 {
+  color: #094BCC;
+  margin: 1.5rem 0 0.5rem;
+}
+
+main h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+main h4 {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+main h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+main h6 {
+  font-weight: 300;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+ul, li {
+  margin-left: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #95B9FF;
+  border-radius: 8px;
+  margin: 0.5rem 0 1.5rem;
+}
