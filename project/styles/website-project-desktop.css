@@ -29,6 +29,7 @@
   .logo {
     font-weight: 600;
     font-size: 2rem;
+    font-style: italic;
   }
   
   nav {
@@ -45,14 +46,14 @@
   
   .nav-links a {
     text-decoration: none;
-    color: #094BCC;
+    color: #051434;
     font-weight: 400;
     font-size: 1rem;
   }
   
   .contact-btn {
     background-color: #FFFFFF;
-    color: white;
+    color: red;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-weight: 600;
