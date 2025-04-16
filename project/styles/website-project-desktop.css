@@ -1,10 +1,16 @@
-/* Base styles */
-body {
-    font-family: 'Inter', sans-serif;
+/* =======================
+   Desktop Styles
+   File: website-project-desktop.css
+   ======================= */
+
+   body {
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    color: #094BCC;
+    color: #2c5bb9;
+    font-weight: 200;
+    font-size: 1rem;
   }
   
   header {
@@ -22,7 +28,7 @@ body {
   
   .logo {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   nav {
@@ -41,14 +47,16 @@ body {
     text-decoration: none;
     color: #094BCC;
     font-weight: 400;
+    font-size: 1rem;
   }
   
   .contact-btn {
-    background-color: #094BCC;
+    background-color: #FFFFFF;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-weight: 600;
+    font-size: 1rem;
   }
   
   .hamburger {
@@ -67,12 +75,12 @@ body {
   
   .intro h2 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
   .intro p {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   
   section.content,
@@ -86,45 +94,29 @@ body {
     flex: 1;
   }
   
+  article h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  
+  article p,
+  article li {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+  
   footer {
     background-color: #094BCC;
     color: white;
     text-align: center;
     padding: 1rem;
     font-weight: 200;
+    font-size: 0.875rem;
   }
   
   footer a {
     color: #FFFFFF;
     text-decoration: underline;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #95B9FF;
-      position: absolute;
-      top: 4rem;
-      right: 1rem;
-      padding: 1rem;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-    .nav-links.open {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    section.content,
-    section.info {
-      flex-direction: column;
-    }
   }
   
   /* Lazy loading images */
