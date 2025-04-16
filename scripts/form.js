@@ -1,5 +1,5 @@
 //adding current year to the page.
-const year = document.querySelector("#year");
+const year = document.querySelector("#currentYear");
 const today = new Date();
 currentYear.innerHTML = ` <span class="highlight">${today.getFullYear()}</span>`;
 
@@ -30,3 +30,13 @@ const products = [
 	  averagerating: 3.9
 	}
   ];
+  const productSelect = document.querySelector("#product");
+
+  productSelect.innerHTML = "";
+
+  products.forEach(product => {
+	const option = document.createElement("option");
+	option.value = product.id;
+	option.textContent = product.name;
+	productSelect.appendChild(option);
+  });
