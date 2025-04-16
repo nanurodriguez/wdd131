@@ -17,14 +17,14 @@ h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #1e3a8a;
+    color: #4269d2;
 }
 
 form {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px #1f397f;
 }
 
 fieldset {
@@ -68,7 +68,9 @@ label {
 
 /* Submit button */
 input[type="submit"] {
-    background-color: #1e3a8a;
+    display: block;
+    width: 100%;
+    background-color: #4269d2;
     color: #ffffff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -80,7 +82,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #3b82f6;
+    background-color:rgb(188, 211, 235);
+    color:#4269d2;
 }
 footer {
     display: grid;
@@ -88,6 +91,11 @@ footer {
     padding: 2rem;
     text-align: center;
     grid-column: 1/4;
+    color: #1f397f;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #1f397f;
+    margin-top: 1rem;
 }
 
 /* Responsive tweaks */
