@@ -140,4 +140,16 @@
     display: block;
     margin: 1rem 0;
   }
+  .lazy-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #094BCC;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
   
