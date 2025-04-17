@@ -45,7 +45,6 @@
     gap: 1.2rem;
     margin: 0;
     padding: 0;
-    background-color: red;
     margin-left: 1 rem;
   }
   
@@ -68,6 +67,7 @@
     font-weight: 600;
     color: #094BCC;
     cursor: pointer;
+    text-align: center;
   }
   .contact-btn:hover{
     background-color: #95B9FF;
@@ -151,5 +151,8 @@
     color: #094BCC;
     font-weight: 600;
     font-size: 2.5rem;
+    border: 2px solid transparent; /* optional solid base */
+    box-shadow: 0 0 8px rgba(9, 75, 204, 0.5); /* blurry glow effect */
+    border-radius: 8px;
   }
   
