@@ -75,6 +75,7 @@
     color: #094BCC;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
   }
   
   .contact-btn:hover{
