@@ -2,7 +2,11 @@
    Desktop Styles
    File: website-project-desktop.css
    ======================= */
-
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
    body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
@@ -12,6 +16,9 @@
     font-weight: 200;
     font-size: 1rem;
   }
+  html, body {
+    overflow-x: hidden; /* prevent horizontal scrolling */
+  }  
   
   header {
     background-color: #95B9FF;
@@ -69,6 +76,7 @@
     cursor: pointer;
     text-align: center;
   }
+  
   .contact-btn:hover{
     background-color: #95B9FF;
   }

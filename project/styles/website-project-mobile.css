@@ -12,8 +12,20 @@
     font-weight: 200;
     font-size: 1rem;
   }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }  
+  main {
+    max-width: 100%;
+    padding: 1rem;
+  }
   
   header {
+    display: flex;
+    justify-content: space-between;
+    /* Space between nav and hamburger */
+    align-items: center;
     background-color: #95B9FF;
     padding: 1rem;
   }
@@ -22,7 +34,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -33,6 +44,9 @@
   
   nav {
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
   }
   
   .nav-links {
@@ -49,22 +63,32 @@
     font-weight: 400;
     font-size: 1rem;
   }
-  
-  .contact-btn {
-    background-color: #094BCC;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 1rem;
+  .navigation a:hover,
+  .navigation a:active {
+    background-color: aliceblue;
   }
+
   
   .hamburger {
-    display: none;
+    display:block;
+    font-size: 1.5rem;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    cursor: pointer;
     color: #094BCC;
+  }
+  .hamburger::before{
+    content: "≡";
+  }
+  .hamburger.show::before {
+    content: "X";
+  }
+  .show li {
+    display: block;
+  }
+
+  .hide {
+    display: none;
   }
   
   main {
@@ -126,4 +150,44 @@
     display: block;
     margin: 1rem 0;
   }
-  
+  @media only screen and (min-width: 40em) {
+    .hamburger {
+      display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .contact-btn {
+      display:flex;
+      margin-left: 1rem;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.7rem;
+      line-height: 1.2;
+      color: #094BCC;
+      background-color: lightcyan;
+      border: 2px solid rgb(85, 85, 243);
+      border-radius: 10px;
+      font-weight: 600;
+      color: #094BCC;
+      cursor: pointer;
+      text-align: center;
+    }
+
+}
