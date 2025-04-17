@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Form example activity- This form is an example of a good form ">
+    <title>The Bell's Bookkeeping</title>
+    <meta description="Bookkeeping Business Website ">
+    <meta description=" he website will provide users the services we offer, how to contact us, about our experience and the information about the benefits of our services and how to sign up. ">
     <meta author="Nancy Bell">
-    <title>File and Folder Setup</title>
+    <title>thebellsbookkeeping</title>
     <link rel="stylesheet" href="/styles/form-mobile.css">
     <link rel="stylesheet" href="/styles/form-desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,30 +20,22 @@
 </head>
 <body>
     <header>
-        <h1>Form Example</h1>
+        <h1>Contact Us</h1>
     </header>
     <main>
         
         <form method="get" action="thanks.html">
             <fieldset>
-                <div>Product</div>
+                <div>Please select the service you need</div>
                 <select id="product" name="product">
-                    <option value="sugar">Sugar</option>
-                    <option value="honey">Honey</option>
-                    <option value="script">Stevia</option>
-                    <option value="monksFruit">Monks Fruit</option>
+                  <label> <input type="radio" name="rating" value="reconciliation"> Reconciliation </label>
+                  <label> <input type="radio" name="rating" value="reports"> Financial Reports </label>
+                  <label> <input type="radio" name="rating" value="cleanup"> Books Cleanup </label>
+                  <label> <input type="radio" name="rating" value="all"> All the above </label>
                 </select>
             </fieldset>
             <fieldset>
-                <div>Overall Rating</div>
-                <label> <input type="radio" name="rating" value="1"> ☆ </label>
-                <label> <input type="radio" name="rating" value="2"> ☆☆ </label>
-                <label> <input type="radio" name="rating" value="3"> ☆☆☆ </label>
-                <label> <input type="radio" name="rating" value="4"> ☆☆☆☆ </label>
-                <label> <input type="radio" name="rating" value="5"> ☆☆☆☆☆ </label>
-            </fieldset>
-            <fieldset>
-                <div>Date of First Taste: </div>
+                <div>When would you like us to contact you? </div>
                 <label for="date">Enter a date:</label>
                 <input type="date" id="date" name="date">
             </fieldset>

@@ -140,6 +140,7 @@
     display: block;
     margin: 1rem 0;
   }
+  /*main image*/
   .lazy-bg {
     background-size: cover;
     background-position: center;
@@ -151,7 +152,7 @@
     color: #094BCC;
     font-weight: 600;
     font-size: 2.5rem;
-    border: 2px solid transparent; /* optional solid base */
+    border: 2px solid transparent; 
     box-shadow: 0 0 8px rgba(9, 75, 204, 0.5); /* blurry glow effect */
     border-radius: 8px;
   }
