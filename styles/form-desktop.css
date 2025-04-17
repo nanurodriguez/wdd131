@@ -60,6 +60,9 @@ input[type="radio"] {
     margin-right: 0.4rem;
     accent-color: #1e3a8a;
 }
+input[type="date"]{
+    width:30%;
+}
 
 label {
     font-size: 1rem;

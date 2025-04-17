@@ -11,66 +11,87 @@
     <title>thebellsbookkeeping</title>
     <link rel="stylesheet" href="/styles/form-mobile.css">
     <link rel="stylesheet" href="/styles/form-desktop.css">
+    <link rel="stylesheet" href="/project/styles/website-project-desktop.css">
+    <link rel="stylesheet" href="/project/styles/website-project-mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script defer src="scripts/form.js"></script>
     <script defer src="scripts/thanks.js"></script>
+    <script defer src="/project/scripts/website-project.js"></script>
 
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+      <div class="top-bar">
+        <div class="logo">The Bell's Bookkeeping Services</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="website-project.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policy.html">Privacy Policy</a></li>
+            </ul>
+            <a href="contact.html" class="contact-btn">Contact Us</a>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+        </nav>
+      </div>
+      <h1>Contact Us</h1>
     </header>
     <main>
-        
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <div>Please select the service you need</div>
-                <select id="product" name="product">
-                  <label> <input type="radio" name="rating" value="reconciliation"> Reconciliation </label>
-                  <label> <input type="radio" name="rating" value="reports"> Financial Reports </label>
-                  <label> <input type="radio" name="rating" value="cleanup"> Books Cleanup </label>
-                  <label> <input type="radio" name="rating" value="all"> All the above </label>
-                </select>
-            </fieldset>
-            <fieldset>
-                <div>When would you like us to contact you? </div>
-                <label for="date">Enter a date:</label>
-                <input type="date" id="date" name="date">
-            </fieldset>
 
-            <fieldset>
-                <div>What did you like the most about the product?
-                    <br>
-                    (Check all that apply)
-                </div>
-                <input type="checkbox" id="taste" name="taste" value="taste">
-                <label for="taste"> Taste</label><br>
-                <input type="checkbox" id="sweetness" name="sweetness" value="sweetness">
-                <label for="sweetness">Sweetness</label><br>
-                <input type="checkbox" id="after-taste" name="after-taste" value="after-taste">
-                <label for="after-taste">After Taste</label><br><br>
-            </fieldset>
-            <fieldset>
-                <div>Written Review (optional)</div>
-                <textarea id="review" name="written-review" ></textarea>
-                <br>
-            </fieldset>
-            <fieldset>
-                <div>Your Name(optional)</div>
-                <textarea id="name" name="written-review" ></textarea>
-                <br>
-            </fieldset>
-            <input type="submit" value="Post Review">
-        </form>
+      <form method="get" action="thanks.html">
 
-    <footer>
-        <p><span id="currentYear"></span>©🗻Utah🗻 -USA- Nancy Bell</p>
-        <p>Last Modified:<span id="lastModified"></span></p>
-    </footer>
+        <fieldset>
+            <div>Please select the service you need</div>
+            <select id="product" name="product">
+              <label> <input type="radio" name="rating" value="reconciliation"> Reconciliation </label>
+              <label> <input type="radio" name="rating" value="reports"> Financial Reports </label>
+              <label> <input type="radio" name="rating" value="cleanup"> Books Cleanup </label>
+              <label> <input type="radio" name="rating" value="all"> All the above </label>
+            </select>
+        </fieldset>
+
+        <fieldset>
+          <div>When would you like us to contact you? </div>
+          <label for="date">Enter a date:</label>
+          <input type="date" id="date" name="date">
+        </fieldset>
+
+        <fieldset>
+          <label for="office-time">Choose a time (9am–5pm):</label>
+          <input type="time" id="office-time" name="office-time" min="09:00" max="17:00">                
+        </fieldset>
+
+        <fieldset>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>              
+        </fieldset>
+
+        <fieldset>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+        </fieldset>
+
+        <fieldset>
+          <div>Your Name</div>
+          <textarea id="name" name="written-review" required></textarea>
+          <br>
+        </fieldset>
+
+        <input type="submit" value="Send Contact Request">
+
+      </form>
 
     </main>
+
+    <footer>
+      <p>&copy; 2025 Bells Bookkeeping</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="website-project.html">Home</a></p>
+      <p><span id="currentYear"></span>©🗻Utah🗻 -USA- Nancy Bell</p>
+      <p>Last Modified:<span id="lastModified"></span></p>  
+    </footer>
+
 </body>
 
 </html>
